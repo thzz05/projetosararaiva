@@ -1,20 +1,20 @@
 {
   "name": "usuarios",
   "version": "1.0.0",
-  "description": "Projeto de microserviço com nodejs e express\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[M\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "description": "Projeto de Microserviço com nodejs e express",
   "main": "index.js",
   "scripts": {
-
+    
     "start": "nodemon ./src/index.js"
 
   },
   "keywords": [
     "Microserviços",
-    "nodejs",
+    "ndejs",
     "express",
     "bcrypt"
   ],
-  "author": "Thiago porfirio malagolin",
+  "author": "Edilson Silva",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
