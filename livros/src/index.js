@@ -1,12 +1,20 @@
 require("dotenv").config();
-const mysql = require("mysql2");
+const express = require("express");
+const route_titulo = require("./routes/titulos/titulos.js");
+const route_preco = require("./routes/precos/precos.js");
+const route_foto = require("./routes/fotos/foto.js");
+const cors = require("cors");
 
-const con = mysql.createConnection({
-    host:process.env.HOST_DATABASE,
-    user:process.env.DATABASE_USER,
-    user:process.env.DATABASE_PASSWORD,
-    port:process.env.DATABASE_PORT,
-    database:process.env.DATABASE_NAME
+const app = express();
+app.use(cors());
+
+app.use(express.json());
+
+app.use("/api/v1/livros",route_titulo);
+app.use("/api/v1/precos",route_preco);
+app.use("/api/v1/fotos",route_foto);
+
+app.listen(process.env.HOST_PORT,()=>{
+    console.log(`Servidor online em ${process.env.HOST_NAME}:
+    ${process.env.HOST_PORT}`);
 });
-
-module.exports =con;
